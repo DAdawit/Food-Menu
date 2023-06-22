@@ -1,4 +1,10 @@
 "use client";
+import Box from "@mui/material/Box";
+import Tab from "@mui/material/Tab";
+import TabContext from "@mui/lab/TabContext";
+import TabList from "@mui/lab/TabList";
+import TabPanel from "@mui/lab/TabPanel";
+
 import Hero from "@/common/Hero";
 import Menu from "@/common/Menu";
 import MenuTypes from "@/common/MenuTypes";
@@ -6,7 +12,14 @@ import { url } from "inspector";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { foods } from "@/data/foods";
+
 export default function Home() {
+  const [value, setValue] = useState("1");
+
+  const handleChange = (event: React.SyntheticEvent, newValue: string) => {
+    setValue(newValue);
+  };
+
   const styles = {
     backgroundImage: `url('/banner8.jpg')`,
     backgroundSize: "cover",
@@ -136,41 +149,37 @@ export default function Home() {
             Delicious Menu
           </h1>
         </div>
-        {/* </div> */}
-        <hr />
-        <div className="flex justify-evenly  text-white font-serif tracking-wider ">
-          <h1>MORNING</h1>
-          <h1>WEEKDAY LUNCH</h1>
-          <h1>DINNER</h1>
-          <h1>WINS</h1>
-        </div>
-        <hr />
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 px-5">
-          {foods.map((food, index) => (
-            <div key={index} className="flex gap-3 shadow-md py-2">
-              <div>
-                <Image
-                  src={`${food.image}`}
-                  alt="spector"
-                  width={100}
-                  height={200}
-                  className="text-center rounded-2xl"
-                />
-              </div>
-              <div className="w-full">
-                <h1 className="text-gray-400 text-lg font-medium capitalize">
-                  {food.name}
-                </h1>
-                <p className="text-gray-400 text-sm font-mono">
-                  {food.ingredients}
-                </p>
-                <h1 className="text-primary">${food.price}</h1>
-              </div>
-            </div>
-          ))}
-        </div>
+        <Box sx={{ width: "100%", typography: "body1" }}>
+          <TabContext value={value}>
+            <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
+              <TabList
+                onChange={handleChange}
+                aria-label="lab API tabs example"
+                centered
+              >
+                <Tab label="MORNING" value="1" />
+                <Tab label="WEEKDAY LUNCH" value="2" />
+                <Tab label="DINNER" value="3" />
+                <Tab label="WINS" value="4" />
+              </TabList>
+            </Box>
+            <TabPanel value="1">
+              <Menu />
+            </TabPanel>
+            <TabPanel value="2">
+              <Menu />
+            </TabPanel>
+            <TabPanel value="3">
+              <Menu />
+            </TabPanel>
+            <TabPanel value="4">
+              <Menu />
+            </TabPanel>
+          </TabContext>
+        </Box>
       </section>
+
       {/* </div> */}
     </main>
   );
