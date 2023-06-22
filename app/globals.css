@@ -9,3 +9,10 @@
 img {
   display: block;
 }
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: #5454549c;
+  margin: 20px 0;
+}
