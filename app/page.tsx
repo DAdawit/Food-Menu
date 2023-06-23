@@ -17,6 +17,7 @@ import Dinner from "@/components/Dinner";
 import Drinks from "@/components/Drinks";
 import Specials from "@/components/Specials";
 import OurStrength from "@/components/OurStrength";
+import Chefs from "@/components/Chefs";
 
 export default function Home() {
   const [value, setValue] = useState("1");
@@ -233,7 +234,10 @@ export default function Home() {
       <section className="bg-bgThird">
         <OurStrength />
       </section>
-
+      {/* chefs */}
+      <section className="bg-bgThird">
+        <Chefs />
+      </section>
       {/* </div> */}
     </main>
   );

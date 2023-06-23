@@ -3,7 +3,7 @@ import React from "react";
 import { morrning } from "@/data/foods";
 const Morrning = () => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 px-5 ">
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 ">
       {morrning.map((food, index) => (
         <div
           key={index}

@@ -3,7 +3,7 @@ import React from "react";
 import { drinks } from "@/data/foods";
 const Drinks = () => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 px-5 ">
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 ">
       {drinks.map((drink, index) => (
         <div
           key={index}
