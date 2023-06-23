@@ -42,28 +42,6 @@ export default function Home() {
     <>
       {/* <Navbar /> */}
 
-      <div id="Nav" className="flex justify-between bg-bgPrimary py-5 px-10">
-        <div>
-          <Image
-            src="/delici.png"
-            alt="spector"
-            width={100}
-            height={200}
-            className="text-center"
-          />
-        </div>
-        <div className="flex justify-evenly gap-3">
-          <Link href="#Home" className="text-white">
-            Home
-          </Link>
-          <Link href="#Menu" className="text-white">
-            Menu
-          </Link>
-          <Link href="#Specials" className="text-white">
-            Specials
-          </Link>
-        </div>
-      </div>
       <main id="Home" className="overflow-hidden">
         <div
           style={styles}

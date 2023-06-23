@@ -1,4 +1,3 @@
-import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 import Link from "next/link";
 const MoveToTop = () => {

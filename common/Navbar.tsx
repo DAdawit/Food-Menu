@@ -10,28 +10,35 @@ const Navbar = () => {
   };
   return (
     <>
-      <div className=" bg-bgPrimary px-5 py-5  border-y-2 border-bgButton 0">
-        <div className="flex justify-between">
-          <Link href="#" className="text-white">
+      <div id="Nav" className="flex justify-between bg-bgPrimary py-5 px-10">
+        <div>
+          <Image
+            src="/delici.png"
+            alt="spector"
+            width={100}
+            height={200}
+            className="text-center"
+          />
+        </div>
+        <div className="flex justify-evenly gap-3">
+          <Link
+            href="#Home"
+            className="text-primary text-lg font-medium font-serif focus:underline active:underline"
+          >
             Home
           </Link>
-          <Link href="#" className="text-white">
-            Home
+          <Link
+            href="#Menu"
+            className="text-primary text-lg font-medium font-serif focus:underline"
+          >
+            Menu
           </Link>
-          <div>
-            {/* <Image
-              src="/delici.png"
-              alt="spector"
-              width={100}
-              height={200}
-              className="text-center"
-            /> */}
-          </div>
-          <div>
-            <Link href="#" className="text-white">
-              Home
-            </Link>
-          </div>
+          <Link
+            href="#Specials"
+            className="text-primary text-lg font-medium font-serif focus:underline"
+          >
+            Specials
+          </Link>
         </div>
       </div>
     </>
