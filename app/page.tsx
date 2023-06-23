@@ -20,6 +20,7 @@ import OurStrength from "@/components/OurStrength";
 import Chefs from "@/components/Chefs";
 import SocialMeadiaLinks from "@/components/SocialMeadiaLinks";
 import Experiance from "@/components/Experiance";
+import Footer from "@/common/Footer";
 
 export default function Home() {
   const [value, setValue] = useState("1");
@@ -42,7 +43,7 @@ export default function Home() {
       >
         <div className="relative top-1/4 md:top-1/3 text-center text-white">
           <div className="grid justify-center gap-8">
-            <h1 className=" text-primary font-sans text-md font-medium tracking-wide">
+            <h1 className=" text-primary font-serif text-lg font-medium tracking-widest">
               Delightfull Expriance
             </h1>
             <Image
@@ -245,8 +246,8 @@ export default function Home() {
       <section className="bg-bgThird">
         <Experiance />
       </section>
-      <section className="bg-bgThird">
-        <Chefs />
+      <section className="bg-bgThird ">
+        <Footer />
       </section>
     </main>
   );
