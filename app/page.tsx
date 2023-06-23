@@ -6,12 +6,15 @@ import TabList from "@mui/lab/TabList";
 import TabPanel from "@mui/lab/TabPanel";
 
 import Hero from "@/common/Hero";
-import Menu from "@/common/Menu";
+import Menu from "@/components/Mornning";
 import MenuTypes from "@/common/MenuTypes";
 import { url } from "inspector";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { foods } from "@/data/foods";
+import { morrning } from "@/data/foods";
+import Lunch from "@/components/Lunch";
+import Dinner from "@/components/Dinner";
+import Drinks from "@/components/Drinks";
 
 export default function Home() {
   const [value, setValue] = useState("1");
@@ -33,7 +36,7 @@ export default function Home() {
       >
         <div className="relative top-1/4 md:top-1/3 text-center text-white">
           <div className="grid justify-center gap-8">
-            <h1 className=" text-primary font-sans text-sm font-medium tracking-wide">
+            <h1 className=" text-primary font-sans text-md font-medium tracking-wide">
               Delightfull Expriance
             </h1>
             <Image
@@ -80,7 +83,7 @@ export default function Home() {
             ever.
           </p>
         </div>
-        <div className="grid  sm:flex sm:flex-row justify-evenly">
+        <div className="grid  sm:flex sm:flex-row justify-evenly  w-full">
           <div className="p-3 grid items-center">
             <Image
               src="/breakfast.jpg"
@@ -149,37 +152,96 @@ export default function Home() {
             Delicious Menu
           </h1>
         </div>
-
-        <Box sx={{ width: "100%", typography: "body1" }}>
-          <TabContext value={value}>
-            <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
-              <TabList
-                onChange={handleChange}
-                aria-label="lab API tabs example"
-                centered
-              >
-                <Tab label="MORNING" value="1" />
-                <Tab label="WEEKDAY LUNCH" value="2" />
-                <Tab label="DINNER" value="3" />
-                <Tab label="WINS" value="4" />
-              </TabList>
-            </Box>
-            <TabPanel value="1">
-              <Menu />
-            </TabPanel>
-            <TabPanel value="2">
-              <Menu />
-            </TabPanel>
-            <TabPanel value="3">
-              <Menu />
-            </TabPanel>
-            <TabPanel value="4">
-              <Menu />
-            </TabPanel>
-          </TabContext>
-        </Box>
+        <div className="px-5 pt-5">
+          <Box sx={{ width: "100%", typography: "body1" }} mt={3}>
+            <TabContext value={value}>
+              <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
+                <TabList
+                  onChange={handleChange}
+                  aria-label="lab API tabs example"
+                  centered
+                  textColor="secondary"
+                >
+                  <Tab
+                    label="MORNING"
+                    value="1"
+                    color="white"
+                    style={{ color: "white" }}
+                  />
+                  <Tab
+                    label="WEEKDAY LUNCH"
+                    value="2"
+                    style={{ color: "white" }}
+                  />
+                  <Tab label="DINNER" value="3" style={{ color: "white" }} />
+                  <Tab label="WINS" value="4" style={{ color: "white" }} />
+                </TabList>
+              </Box>
+              <TabPanel value="1">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 ">
+                  {morrning.map((food, index) => (
+                    <div
+                      key={index}
+                      className="flex items-center gap-3 shadow-md py-3 px-2 rounded-lg bg-bgPrimary opacity-90 w-full"
+                    >
+                      <div>
+                        <Image
+                          src={`${food.image}`}
+                          alt="spector"
+                          width={100}
+                          height={200}
+                          className="text-center rounded-2xl"
+                        />
+                      </div>
+                      <div className="w-full">
+                        <h1 className="text-gray-400 text-lg font-medium capitalize">
+                          {food.name}
+                        </h1>
+                        <p className="text-gray-400 text-sm font-mono">
+                          {food.ingredients}
+                        </p>
+                        <h1 className="text-primary">${food.price}</h1>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </TabPanel>
+              <TabPanel value="2">
+                <Lunch />
+              </TabPanel>
+              <TabPanel value="3">
+                <Dinner />
+              </TabPanel>
+              <TabPanel value="4">
+                <Drinks />
+              </TabPanel>
+            </TabContext>
+          </Box>
+          <div className="flex justify-center pt-5 pb-10">
+            <button className="py-4 px-6 text-center text-primary border-2 border-primary mt-4 hover:bg-primary hover:text-black transition-all tracking-wider font-medium font-mono">
+              View all menu
+            </button>
+          </div>
+        </div>
       </section>
-
+      {/* special offers */}
+      <section className="bg-bgPrimary">
+        <div className="flex flex-col justify-center items-center gap-5 pt-10">
+          <h1 className=" text-primary font-sans text-sm font-medium text-center ">
+            SPECIAL OFFERS
+          </h1>
+          <Image
+            src="/separator.png"
+            alt="spector"
+            width={100}
+            height={200}
+            className="text-center"
+          />
+          <h1 className=" text-secondary text-4xl font-serif">
+            Best Specialties
+          </h1>
+        </div>
+      </section>
       {/* </div> */}
     </main>
   );
