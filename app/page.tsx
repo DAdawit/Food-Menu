@@ -19,6 +19,7 @@ import Specials from "@/components/Specials";
 import OurStrength from "@/components/OurStrength";
 import Chefs from "@/components/Chefs";
 import SocialMeadiaLinks from "@/components/SocialMeadiaLinks";
+import Experiance from "@/components/Experiance";
 
 export default function Home() {
   const [value, setValue] = useState("1");
@@ -32,6 +33,7 @@ export default function Home() {
     backgroundSize: "cover",
     postion: "relative",
   };
+
   return (
     <main className="overflow-hidden">
       <div
@@ -239,7 +241,13 @@ export default function Home() {
       <section className="bg-bgThird">
         <Chefs />
       </section>
-      {/* </div> */}
+
+      <section className="bg-bgThird">
+        <Experiance />
+      </section>
+      <section className="bg-bgThird">
+        <Chefs />
+      </section>
     </main>
   );
 }

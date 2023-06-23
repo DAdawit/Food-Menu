@@ -5,7 +5,7 @@ import SocialMeadiaLinks from "./SocialMeadiaLinks";
 const Chefs = () => {
   return (
     <div>
-      <div className="bg-bgThird mt-15">
+      <div className="bg-bgThird mt-15 pb-5">
         <div className="flex flex-col justify-center items-center gap-5 pt-10">
           <h1 className=" text-primary font-sans text-sm font-medium ">
             EXPERIENCED TEAM
