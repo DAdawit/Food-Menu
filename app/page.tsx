@@ -18,6 +18,7 @@ import Drinks from "@/components/Drinks";
 import Specials from "@/components/Specials";
 import OurStrength from "@/components/OurStrength";
 import Chefs from "@/components/Chefs";
+import SocialMeadiaLinks from "@/components/SocialMeadiaLinks";
 
 export default function Home() {
   const [value, setValue] = useState("1");
