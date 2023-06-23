@@ -12,6 +12,7 @@ module.exports = {
         secondary: "#fff",
         bgPrimary: "#0F0C0C",
         bgSecondary: "#212021",
+        bgThird: "#121414",
       },
     },
   },

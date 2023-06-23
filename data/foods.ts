@@ -245,3 +245,54 @@ export const drinks = [
     image: "/drinks/drink2.jpg",
   },
 ];
+
+export const specials = [
+  {
+    name: "Spaghetti Carbonara",
+    ingredients: "spaghetti, bacon, eggs, parmesan",
+    price: 12.99,
+    image: "/special/special1.jpg",
+  },
+  {
+    name: "Margherita Pizza",
+    ingredients: "tomato sauce, mozzarella, basil",
+    price: 10.99,
+    image: "/special/special2.jpg",
+  },
+  {
+    name: "Chicken Tikka Masala",
+    ingredients: "chicken, tomato sauce, spices",
+    price: 14.99,
+    image: "/special/special3.jpg",
+  },
+  {
+    name: "Caesar Salad",
+    ingredients: "romaine lettuce, croutons, parmesan, Caesar dressing",
+    price: 8.99,
+    image: "/special/special4.jpg",
+  },
+  {
+    name: "Beef Burger",
+    ingredients: "beef patty, cheddar cheese, lettuce, tomato",
+    price: 11.99,
+    image: "/special/special1.jpg",
+  },
+  {
+    name: "Sushi Platter",
+    ingredients: "rice, seaweed, assorted fish",
+    price: 24.99,
+    image: "/special/special2.jpg",
+  },
+  {
+    name: "Spaghetti Carbonara",
+    ingredients: "spaghetti, bacon, eggs, parmesan",
+    price: 12.99,
+    image: "/special/special3.jpg",
+  },
+  {
+    name: "Margherita Pizza",
+    ingredients: "tomato sauce, mozzarella, basil",
+    price: 10.99,
+    image: "/special/special4.jpg",
+  },
+];

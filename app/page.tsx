@@ -15,6 +15,8 @@ import { morrning } from "@/data/foods";
 import Lunch from "@/components/Lunch";
 import Dinner from "@/components/Dinner";
 import Drinks from "@/components/Drinks";
+import Specials from "@/components/Specials";
+import OurStrength from "@/components/OurStrength";
 
 export default function Home() {
   const [value, setValue] = useState("1");
@@ -135,8 +137,6 @@ export default function Home() {
       {/* <div className="bg-bgSecondary"> */}
       {/* <Menu /> */}
       <section className="bg-bgSecondary pt-10">
-        {/* <div className="grid pt-10  px-5"> */}
-
         <div className="flex flex-col justify-center items-center gap-5 pt-10">
           <h1 className=" text-primary font-sans text-sm font-medium text-center ">
             SPECIAL SELECTION
@@ -226,22 +226,14 @@ export default function Home() {
       </section>
       {/* special offers */}
       <section className="bg-bgPrimary">
-        <div className="flex flex-col justify-center items-center gap-5 pt-10">
-          <h1 className=" text-primary font-sans text-sm font-medium text-center ">
-            SPECIAL OFFERS
-          </h1>
-          <Image
-            src="/separator.png"
-            alt="spector"
-            width={100}
-            height={200}
-            className="text-center"
-          />
-          <h1 className=" text-secondary text-4xl font-serif">
-            Best Specialties
-          </h1>
-        </div>
+        <Specials />
       </section>
+
+      {/* our strength */}
+      <section className="bg-bgThird">
+        <OurStrength />
+      </section>
+
       {/* </div> */}
     </main>
   );
