@@ -24,6 +24,7 @@ import Navbar from "@/common/Navbar";
 import Link from "next/link";
 import MoveToTop from "@/components/Home/MoveToTop";
 import Hero from "@/components/Home/Hero";
+import Morrning from "@/components/Home/Mornning";
 
 export default function Home() {
   const [value, setValue] = useState("1");
@@ -64,8 +65,8 @@ export default function Home() {
               ever.
             </p>
           </div>
-          <div className="grid  sm:flex sm:flex-row justify-evenly  w-full">
-            <div className="p-3 grid items-center">
+          <div className="grid  sm:flex sm:flex-row justify-evenly w-full mt-5">
+            <div className="py-3 grid items-center">
               <Image
                 src="/breakfast.jpg"
                 height={300}
@@ -76,11 +77,14 @@ export default function Home() {
               <h1 className="text-secondary text-center tracking-wider font-sans mt-5 text-2xl">
                 Breakfast
               </h1>
-              <button className="text-primary hover:underline transition-all underline-offset-4 text-center">
+              <Link
+                href="/menu"
+                className="text-primary hover:underline transition-all underline-offset-4 text-center"
+              >
                 View Menu
-              </button>
+              </Link>
             </div>
-            <div className=" p-3 mt-16 grid items-center">
+            <div className=" py-3 sm:mt-16 grid items-center">
               <Image
                 src="/appetizers.jpg"
                 height={300}
@@ -91,11 +95,14 @@ export default function Home() {
               <h1 className="text-secondary text-center tracking-wider font-sans mt-5 text-2xl">
                 Appetizers
               </h1>
-              <button className="mt-2 text-primary hover:underline transition-all underline-offset-4 text-center">
+              <Link
+                href="/menu"
+                className="text-primary hover:underline transition-all underline-offset-4 text-center"
+              >
                 View Menu
-              </button>
+              </Link>
             </div>
-            <div className="p-3 grid items-center">
+            <div className="py-3 grid items-center">
               <Image
                 src="/drinks.jpg"
                 height={300}
@@ -106,9 +113,12 @@ export default function Home() {
               <h1 className="text-secondary text-center tracking-wider font-sans mt-5 text-2xl">
                 Drinks
               </h1>
-              <button className="text-primary hover:underline transition-all underline-offset-4 text-center">
+              <Link
+                href="/menu"
+                className="text-primary hover:underline transition-all underline-offset-4 text-center"
+              >
                 View Menu
-              </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -130,10 +140,10 @@ export default function Home() {
               Delicious Menu
             </h1>
           </div>
-          <div className="px-5 pt-5">
+          <div className=" pt-5">
             <Box sx={{ width: "100%", typography: "body1" }} mt={3}>
               <TabContext value={value}>
-                <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
+                <Box sx={{ borderBottom: 1, borderColor: "divider" }} px={2}>
                   <TabList
                     onChange={handleChange}
                     aria-label="lab API tabs example"
@@ -152,33 +162,7 @@ export default function Home() {
                   </TabList>
                 </Box>
                 <TabPanel value="1">
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 ">
-                    {morrning.map((food, index) => (
-                      <div
-                        key={index}
-                        className="flex items-center gap-3 shadow-md py-3 px-2 rounded-lg bg-bgPrimary opacity-90 w-full"
-                      >
-                        <div>
-                          <Image
-                            src={`${food.image}`}
-                            alt="spector"
-                            width={100}
-                            height={200}
-                            className="text-center rounded-2xl"
-                          />
-                        </div>
-                        <div className="w-full">
-                          <h1 className="text-gray-400 text-lg font-medium capitalize">
-                            {food.name}
-                          </h1>
-                          <p className="text-gray-400 text-sm font-mono">
-                            {food.ingredients}
-                          </p>
-                          <h1 className="text-primary">${food.price}</h1>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
+                  <Morrning />
                 </TabPanel>
                 <TabPanel value="2">
                   <Lunch />
@@ -192,9 +176,12 @@ export default function Home() {
               </TabContext>
             </Box>
             <div className="flex justify-center pt-5 pb-10">
-              <button className="py-4 px-6 text-center text-primary border-2 border-primary mt-4 hover:bg-primary hover:text-black transition-all tracking-wider font-medium font-mono">
+              <Link
+                href="/menu"
+                className="py-4 px-6 text-center text-primary border-2 border-primary mt-4 hover:bg-primary hover:text-black transition-all tracking-wider font-medium font-mono"
+              >
                 View all menu
-              </button>
+              </Link>
             </div>
           </div>
         </section>
@@ -215,14 +202,11 @@ export default function Home() {
         <section className="bg-bgThird">
           <Experiance />
         </section>
-        <section className="bg-bgThird ">
-          <Footer />
+        {/* move to top */}
+        <section>
+          <MoveToTop />
         </section>
       </main>
-      {/* move to top */}
-      <section>
-        <MoveToTop />
-      </section>
     </>
   );
 }
