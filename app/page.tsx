@@ -5,7 +5,6 @@ import TabContext from "@mui/lab/TabContext";
 import TabList from "@mui/lab/TabList";
 import TabPanel from "@mui/lab/TabPanel";
 
-import Hero from "@/common/Hero";
 import Menu from "@/components/Home/Mornning";
 import MenuTypes from "@/common/MenuTypes";
 import { url } from "inspector";
@@ -24,6 +23,7 @@ import Footer from "@/common/Footer";
 import Navbar from "@/common/Navbar";
 import Link from "next/link";
 import MoveToTop from "@/components/Home/MoveToTop";
+import Hero from "@/components/Home/Hero";
 
 export default function Home() {
   const [value, setValue] = useState("1");
@@ -40,40 +40,9 @@ export default function Home() {
 
   return (
     <>
-      {/* <Navbar /> */}
       <main id="Home" className="overflow-hidden">
-        <div
-          style={styles}
-          className=" bg-bgPrimary h-screen w-screen overflow-hidden"
-        >
-          <div className="relative top-1/4 md:top-1/3 text-center text-white">
-            <div className="grid justify-center gap-8">
-              <h1 className=" text-primary font-serif text-lg font-medium tracking-widest">
-                Delightfull Expriance
-              </h1>
-              <Image
-                src="/separator.png"
-                alt="spector"
-                width={250}
-                height={200}
-                className="text-center"
-              />
-            </div>
-            <h1 className="text-4xl sm:text-6xl text-center font-serif mt-2 tracking-wide	">
-              Flavors inspired by
-            </h1>
-            <h1 className="text-4xl text-center font-serif mt-2 tracking-wide	">
-              the seasones
-            </h1>
-            <p className="font-mono mt-2 ">
-              Come with family & feel the joy of mouthWatering food
-            </p>
-            <button className="py-4 px-6  border-2 border-bgButton text-primary mt-4 hover:bg-bgButton  hover:text-white transition-all tracking-wider font-medium font-mono">
-              View our menu
-            </button>
-          </div>
-        </div>
-        {/* <Hero /> */}
+        <Hero />
+
         <div className="bg-bgPrimary  mt-15">
           <div className="flex flex-col justify-center items-center gap-5 pt-10">
             <h1 className=" text-primary font-sans text-sm font-medium ">
@@ -177,11 +146,7 @@ export default function Home() {
                       color="white"
                       style={{ color: "white" }}
                     />
-                    <Tab
-                      label="WEEKDAY LUNCH"
-                      value="2"
-                      style={{ color: "white" }}
-                    />
+                    <Tab label="LUNCH" value="2" style={{ color: "white" }} />
                     <Tab label="DINNER" value="3" style={{ color: "white" }} />
                     <Tab label="WINS" value="4" style={{ color: "white" }} />
                   </TabList>

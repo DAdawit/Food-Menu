@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <>
       <div id="Nav" className="flex justify-between bg-bgPrimary py-5 px-10">
-        <div>
+        <Link href="/">
           <Image
             src="/delici.png"
             alt="spector"
@@ -19,20 +19,20 @@ const Navbar = () => {
             height={200}
             className="text-center"
           />
-        </div>
+        </Link>
         <div className="flex justify-evenly gap-3">
           <Link
-            href="#Home"
+            href="/"
             className="text-primary text-lg font-medium font-serif focus:underline active:underline"
           >
             Home
           </Link>
-          <Link
+          {/* <Link
             href="/menu"
             className="text-primary text-lg font-medium font-serif focus:underline"
           >
             Menu
-          </Link>
+          </Link> */}
           <Link
             href="#Specials"
             className="text-primary text-lg font-medium font-serif focus:underline"
