@@ -41,7 +41,6 @@ export default function Home() {
   return (
     <>
       {/* <Navbar /> */}
-
       <main id="Home" className="overflow-hidden">
         <div
           style={styles}
@@ -255,8 +254,7 @@ export default function Home() {
           <Footer />
         </section>
       </main>
-
-      {/* move to top  */}
+      {/* move to top */}
       <section>
         <MoveToTop />
       </section>

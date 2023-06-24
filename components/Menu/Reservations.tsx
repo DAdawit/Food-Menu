@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Reservations = () => {
   return (
-    <div className="bg-[#131415] px-5 sm:px-14 pt-10">
+    <div className="bg-[#131415] px-5 sm:px-14 pt-10 pb-10">
       <div className="flex flex-col justify-center items-center gap-5 pt-10">
         <h1 className=" text-primary font-sans text-sm font-medium ">
           RESERVATIONS
