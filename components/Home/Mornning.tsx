@@ -7,7 +7,7 @@ const Morrning = () => {
       {morrning.map((food, index) => (
         <div
           key={index}
-          className="flex items-center gap-3 shadow-md py-3 px-2 rounded-lg bg-bgPrimary opacity-90"
+          className="flex items-center gap-3 shadow-md py-3 px-2 rounded-lg bg-bgPrimary opacity-90 w-full"
         >
           <div>
             <Image

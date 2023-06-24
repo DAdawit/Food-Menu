@@ -71,7 +71,6 @@ const Experiance = () => {
               <h4>WON</h4>
             </div>
           </div>
-          d
         </div>
       </div>
     </section>

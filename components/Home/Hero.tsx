@@ -7,7 +7,7 @@ const Hero = () => {
     <div className="overflow-x-hidden">
       <div className="h-screen w-screen bg-orange-300 relative">
         <Image
-          src="/banner8.jpg"
+          src="/banner7.jpg"
           alt="spector"
           fill
           className="w-screen h-96 object-cover brightness-50	"
@@ -22,7 +22,7 @@ const Hero = () => {
             height={100}
             className="self-center object-contain"
           />
-          <h1 className="text-center text-primary font-serif text-lg font-medium tracking-widest mt-10">
+          <h1 className="text-center text-primary font-serif text-lg font-bold tracking-widest mt-10">
             Delightfull Expriance
           </h1>
           <Image
@@ -33,13 +33,13 @@ const Hero = () => {
             className="self-center py-2"
           />
           <div className="text-white content-center flex flex-col justify-center">
-            <h1 className="text-4xl sm:text-6xl text-center font-serif mt-2 tracking-wide	">
+            <h1 className="text-4xl sm:text-6xl text-center  font-serif mt-2 tracking-wide	">
               Flavors inspired by
             </h1>
             <h1 className="text-4xl text-center font-serif mt-2 tracking-wide	">
               the seasones
             </h1>
-            <p className="font-mono mt-2 text-center">
+            <p className="font-sans mt-2 text-center">
               Come with family & feel the joy of mouthWatering food
             </p>
             {/* <Link href="/menu" className="text-center w-full content-center"> */}

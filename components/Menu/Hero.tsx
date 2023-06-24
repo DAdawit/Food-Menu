@@ -3,7 +3,7 @@ import Image from "next/image";
 const Hero = () => {
   return (
     <div className="overflow-x-hidden">
-      <div className="h-96 w-screen bg-orange-300 relative">
+      <div className="h-96 w-screen relative">
         <Image
           src="/banner14.jpg"
           alt="spector"

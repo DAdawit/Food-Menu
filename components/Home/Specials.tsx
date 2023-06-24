@@ -61,7 +61,6 @@ export default class Specials extends Component {
           </h1>
         </div>
         <div className="container mx-auto px-6">
-          <h2> Multiple items </h2>
           <Slider {...settings}>
             {specials.map((special, index) => (
               <div
