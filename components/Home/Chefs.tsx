@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import SocialMeadiaLinks from "./SocialMeadiaLinks";
+import SocialMeadiaLinks from "../SocialMeadiaLinks";
 
 const Chefs = () => {
   return (

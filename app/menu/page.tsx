@@ -8,36 +8,37 @@ const page = () => {
   };
 
   return (
-    <div>
-      <div
-        style={styles}
-        className="group bg-bgPrimary  w-screen overflow-hidden"
-      >
-        <div className="relative top-1/4 md:top-1/3 text-center text-white">
-          <div className="grid justify-center gap-8">
-            <h1 className=" text-primary font-serif text-lg font-medium tracking-widest">
-              Delightfull Expriance
-            </h1>
-            <Image
-              src="/separator.png"
-              alt="spector"
-              width={250}
-              height={200}
-              className="text-center"
-            />
-          </div>
-          <h1 className="text-4xl sm:text-6xl text-center font-serif mt-2 tracking-wide	">
-            Flavors inspired by
+    <div className="overflow-x-hidden">
+      <div className="h-96 w-screen bg-orange-300 relative">
+        <Image
+          src="/banner14.jpg"
+          alt="spector"
+          fill
+          className="w-screen h-96 object-cover brightness-50	"
+        />
+      </div>
+      <div className="absolute top-1/3 w-full">
+        <div className="flex flex-col justify-center ">
+          <Image
+            src="/delici2.png"
+            alt="spector"
+            width={150}
+            height={100}
+            className="self-center object-contain"
+          />
+          <h1 className="text-center text-primary font-serif text-lg font-medium tracking-widest mt-10">
+            DELICIOUS & AMAZING
           </h1>
-          <h1 className="text-4xl text-center font-serif mt-2 tracking-wide	">
-            the seasones
+          <Image
+            src="/separator.png"
+            alt="spector"
+            width={100}
+            height={200}
+            className="self-center py-2"
+          />
+          <h1 className="text-5xl text-center font-serif mt-2 tracking-wide	text-white">
+            Our Menu
           </h1>
-          <p className="font-mono mt-2 ">
-            Come with family & feel the joy of mouthWatering food
-          </p>
-          <button className="py-4 px-6  border-2 border-bgButton text-primary mt-4 hover:bg-bgButton  hover:text-white transition-all tracking-wider font-medium font-mono">
-            View our menu
-          </button>
         </div>
       </div>
     </div>

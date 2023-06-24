@@ -6,24 +6,24 @@ import TabList from "@mui/lab/TabList";
 import TabPanel from "@mui/lab/TabPanel";
 
 import Hero from "@/common/Hero";
-import Menu from "@/components/Mornning";
+import Menu from "@/components/Home/Mornning";
 import MenuTypes from "@/common/MenuTypes";
 import { url } from "inspector";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { morrning } from "@/data/foods";
-import Lunch from "@/components/Lunch";
-import Dinner from "@/components/Dinner";
-import Drinks from "@/components/Drinks";
-import Specials from "@/components/Specials";
-import OurStrength from "@/components/OurStrength";
-import Chefs from "@/components/Chefs";
-import SocialMeadiaLinks from "@/components/SocialMeadiaLinks";
-import Experiance from "@/components/Experiance";
+import Lunch from "@/components/Home/Lunch";
+import Dinner from "@/components/Home/Dinner";
+import Drinks from "@/components/Home/Drinks";
+import Specials from "@/components/Home/Specials";
+import OurStrength from "@/components/Home/OurStrength";
+import Chefs from "@/components/Home/Chefs";
+import SocialMeadiaLinks from "@/components/Home/SocialMeadiaLinks";
+import Experiance from "@/components/Home/Experiance";
 import Footer from "@/common/Footer";
 import Navbar from "@/common/Navbar";
 import Link from "next/link";
-import MoveToTop from "@/components/MoveToTop";
+import MoveToTop from "@/components/Home/MoveToTop";
 
 export default function Home() {
   const [value, setValue] = useState("1");
