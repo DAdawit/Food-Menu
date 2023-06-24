@@ -21,6 +21,7 @@ const MainDishes = () => {
         <div className="px-5 mt-10">
           <div className="grid grid-cols-1 md:flex md:justify-evenly  gap-2 md:flex-row-reverse">
             <div>
+              {/* eslint-disable-next-line */}
               <img
                 src="/banner11.jpg"
                 alt="spector"

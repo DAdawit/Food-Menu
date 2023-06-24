@@ -3,12 +3,13 @@ import Image from "next/image";
 const Hero = () => {
   return (
     <div className="overflow-x-hidden">
-      <div className="h-96 w-screen relative">
+      <div className="h-96 w-screen relative pb-5">
         <Image
           src="/banner14.jpg"
           alt="spector"
           fill
-          className="w-screen h-96 object-cover brightness-50	"
+          className="w-screen h-96 object-cover brightness-50"
+          blurDataURL="/banner14.jpg"
         />
       </div>
       <div className="absolute top-1/3 w-full">
