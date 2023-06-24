@@ -30,7 +30,7 @@ const Footer = () => {
           <h1 className="text-center text-3xl font-serif font-medium py-5 text-white">
             Get News & Offers
           </h1>
-          <form action="">
+          <form action="" className="flex items-center">
             <input type="email" className="outline-none p-3 " />
             <button className="bg-primary text-white p-3 font-medium">
               submit

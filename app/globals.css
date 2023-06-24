@@ -9,3 +9,9 @@
 img {
   display: block;
 }
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+}

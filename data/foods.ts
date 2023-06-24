@@ -275,24 +275,24 @@ export const specials = [
     name: "Beef Burger",
     ingredients: "beef patty, cheddar cheese, lettuce, tomato",
     price: 11.99,
-    image: "/special/special1.jpg",
+    image: "/special/special5.jpg",
   },
   {
     name: "Sushi Platter",
     ingredients: "rice, seaweed, assorted fish",
     price: 24.99,
-    image: "/special/special2.jpg",
+    image: "/special/special6.jpg",
   },
   {
     name: "Spaghetti Carbonara",
     ingredients: "spaghetti, bacon, eggs, parmesan",
     price: 12.99,
-    image: "/special/special3.jpg",
+    image: "/special/special7.jpg",
   },
   {
     name: "Margherita Pizza",
     ingredients: "tomato sauce, mozzarella, basil",
     price: 10.99,
-    image: "/special/special4.jpg",
+    image: "/special/special8.jpg",
   },
 ];
