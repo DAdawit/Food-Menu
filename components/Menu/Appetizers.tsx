@@ -21,6 +21,7 @@ const Appetizers = () => {
         <div className="px-5 mt-10">
           <div className="grid grid-cols-1 md:flex md:justify-evenly  gap-2 ">
             <div>
+              {/* eslint-disable-next-line */}
               <img
                 src="/banner5.jpg"
                 alt="spector"

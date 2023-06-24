@@ -5,12 +5,13 @@ import React from "react";
 const Hero = () => {
   return (
     <div className="overflow-x-hidden">
-      <div className="h-screen w-screen bg-orange-300 relative">
+      <div className="h-screen w-screen relative">
         <Image
           src="/banner7.jpg"
           alt="spector"
           fill
-          className="w-screen h-96 object-cover brightness-50	"
+          className="w-screen h-96 object-cover brightness-50"
+          blurDataURL="/banner7.jpg"
         />
       </div>
       <div className="absolute top-1/3 w-full">
