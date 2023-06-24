@@ -27,12 +27,12 @@ const Navbar = () => {
           >
             Home
           </Link>
-          {/* <Link
-            href="/menu"
+          <Link
+            href="/about"
             className="text-primary text-lg font-medium font-serif focus:underline"
           >
-            Menu
-          </Link> */}
+            About Us
+          </Link>
           <Link
             href="#Specials"
             className="text-primary text-lg font-medium font-serif focus:underline"
