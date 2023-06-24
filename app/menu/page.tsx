@@ -1,47 +1,20 @@
-import Image from "next/image";
+import Appetizers from "@/components/Menu/Appetizers";
+import Hero from "@/components/Menu/Hero";
+import MainDishes from "@/components/Menu/MainDishes";
 
 const page = () => {
-  const styles = {
-    backgroundImage: `url('/banner14.jpg')`,
-    backgroundSize: "cover",
-    postion: "relative",
-  };
-
   return (
-    <div className="overflow-x-hidden">
-      <div className="h-96 w-screen bg-orange-300 relative">
-        <Image
-          src="/banner14.jpg"
-          alt="spector"
-          fill
-          className="w-screen h-96 object-cover brightness-50	"
-        />
-      </div>
-      <div className="absolute top-1/3 w-full">
-        <div className="flex flex-col justify-center ">
-          <Image
-            src="/delici2.png"
-            alt="spector"
-            width={150}
-            height={100}
-            className="self-center object-contain"
-          />
-          <h1 className="text-center text-primary font-serif text-lg font-medium tracking-widest mt-10">
-            DELICIOUS & AMAZING
-          </h1>
-          <Image
-            src="/separator.png"
-            alt="spector"
-            width={100}
-            height={200}
-            className="self-center py-2"
-          />
-          <h1 className="text-5xl text-center font-serif mt-2 tracking-wide	text-white">
-            Our Menu
-          </h1>
-        </div>
-      </div>
-    </div>
+    <>
+      <section>
+        <Hero />
+      </section>
+      <section>
+        <Appetizers />
+      </section>
+      <section>
+        <MainDishes />
+      </section>
+    </>
   );
 };
 

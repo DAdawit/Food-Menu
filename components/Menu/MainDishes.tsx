@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const Appetizers = () => {
+const MainDishes = () => {
   return (
     <>
       <div className="bg-[#131415]">
@@ -19,10 +19,10 @@ const Appetizers = () => {
         </div>
 
         <div className="px-5 mt-10">
-          <div className="grid grid-cols-1 md:flex md:justify-evenly  gap-2 ">
+          <div className="grid grid-cols-1 md:flex md:justify-evenly  gap-2 md:flex-row-reverse">
             <div>
               <img
-                src="/banner5.jpg"
+                src="/banner11.jpg"
                 alt="spector"
                 width={100}
                 height={200}
@@ -52,4 +52,4 @@ const Appetizers = () => {
   );
 };
 
-export default Appetizers;
+export default MainDishes;
