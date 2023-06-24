@@ -28,7 +28,7 @@ const Navbar = () => {
             Home
           </Link>
           <Link
-            href="#Menu"
+            href="/menu"
             className="text-primary text-lg font-medium font-serif focus:underline"
           >
             Menu
