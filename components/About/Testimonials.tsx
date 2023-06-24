@@ -65,7 +65,7 @@ export default class Testimonials extends Component {
               height={200}
               className="text-center"
             />
-            <h1 className=" text-secondary text-4xl font-serif">
+            <h1 className=" text-secondary text-center text-3xl font-serif">
               What People Are Saying
             </h1>
           </div>

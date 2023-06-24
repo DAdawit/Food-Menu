@@ -16,7 +16,7 @@ const WhoWeAre = () => {
           height={200}
           className="text-center"
         />
-        <p className=" text-secondary text-2xl font-serif tracking-widest max-w-4xl text-center">
+        <p className=" text-secondary text-xl font-serif tracking-widest max-w-4xl text-center px-5">
           A modern restaurant with a menu that will make your mouth water.
           Servicing delicious food since 45 years. Enjoy our seasonal menu and
           experience the beauty of naturalness
@@ -24,7 +24,7 @@ const WhoWeAre = () => {
       </div>
       <div className="  px-5 mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-evenly items-center gap-3 ">
         <div className=" max-w-full md:max-w-sm grid justify-evenly h-96 w-full">
-          <p className="items-start text-center text-sm text-amber-100 font-medium font-sans ">
+          <p className="items-start text-center text-sm text-secondary font-medium font-sans ">
             Lorem Ipsum is simply dummy text of the printingand typesetting
             industry lorem Ipsum has been the industrys standard dummy text ever
             since the when an unknown printer took a galley of type and
@@ -42,6 +42,7 @@ const WhoWeAre = () => {
           />
         </div>
         <div className="h-96 max-w-full md:max-w-sm">
+          {/* eslint-disable-next-line */}
           <img
             src="/hotel.jpg"
             alt="spector"
@@ -82,8 +83,9 @@ const WhoWeAre = () => {
           </div>
         </div>
       </div>
-
-      <Achivements />
+      <section className="pt-5">
+        <Achivements />
+      </section>
     </div>
   );
 };

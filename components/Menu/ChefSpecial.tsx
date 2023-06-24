@@ -9,6 +9,7 @@ const ChefSpecial = () => {
         <div className="flex justify-center ">
           <div className="grid grid-cols-1 sm:grid-cols-2 rounded-t-2xl rounded-b-2xl sm:rounded-l-3xl sm:rounded-r-3xl">
             <div>
+              {/* eslint-disable-next-line */}
               <img
                 src="/banner14.jpg"
                 alt="spector"

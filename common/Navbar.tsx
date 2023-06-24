@@ -31,14 +31,14 @@ const Navbar = () => {
             href="/about"
             className="text-primary text-lg font-medium font-serif focus:underline"
           >
-            About Us
+            About
           </Link>
-          <Link
+          {/* <Link
             href="#Specials"
             className="text-primary text-lg font-medium font-serif focus:underline"
           >
             Specials
-          </Link>
+          </Link> */}
         </div>
       </div>
     </>
