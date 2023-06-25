@@ -1,3 +1,4 @@
+"use client";
 import React, { Component } from "react";
 import { specials } from "@/data/foods";
 import Slider from "react-slick";

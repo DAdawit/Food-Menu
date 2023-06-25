@@ -1,13 +1,10 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import TemporaryDrawer from "./Drawer";
 
 const Navbar = () => {
-  const styles = {
-    backgroundImage: `url('/banner8.jpg')`,
-    backgroundSize: "cover",
-    postion: "relative",
-  };
   return (
     <>
       <div id="Nav" className="flex justify-between bg-bgPrimary py-5 px-10">
@@ -21,24 +18,7 @@ const Navbar = () => {
           />
         </Link>
         <div className="flex justify-evenly gap-3">
-          <Link
-            href="/"
-            className="text-primary text-lg font-medium font-serif focus:underline active:underline"
-          >
-            Home
-          </Link>
-          <Link
-            href="/about"
-            className="text-primary text-lg font-medium font-serif focus:underline"
-          >
-            About
-          </Link>
-          {/* <Link
-            href="#Specials"
-            className="text-primary text-lg font-medium font-serif focus:underline"
-          >
-            Specials
-          </Link> */}
+          <TemporaryDrawer />
         </div>
       </div>
     </>
