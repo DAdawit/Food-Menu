@@ -1,6 +1,7 @@
 import Hero from "@/components/About/Hero";
 import Testimonials from "@/components/About/Testimonials";
 import WhoWeAre from "@/components/About/WhoWeAre";
+import MoveToTop from "@/components/Home/MoveToTop";
 import React from "react";
 
 const page = () => {
@@ -15,6 +16,7 @@ const page = () => {
       <section>
         <Testimonials />
       </section>
+      <MoveToTop />
     </div>
   );
 };
