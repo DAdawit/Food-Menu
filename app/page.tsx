@@ -203,9 +203,6 @@ export default function Home() {
           <Experiance />
         </section>
         {/* move to top */}
-        <section>
-          <MoveToTop />
-        </section>
       </main>
     </>
   );
