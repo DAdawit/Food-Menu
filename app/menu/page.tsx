@@ -1,3 +1,4 @@
+import MoveToTop from "@/components/Home/MoveToTop";
 import Appetizers from "@/components/Menu/Appetizers";
 import ChefSpecial from "@/components/Menu/ChefSpecial";
 import Hero from "@/components/Menu/Hero";
@@ -26,6 +27,7 @@ const page = () => {
       <section>
         <Reservations />
       </section>
+      <MoveToTop />
     </>
   );
 };
