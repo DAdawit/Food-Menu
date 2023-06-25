@@ -1,3 +1,4 @@
+"use client";
 import MoveToTop from "@/components/Home/MoveToTop";
 import Appetizers from "@/components/Menu/Appetizers";
 import ChefSpecial from "@/components/Menu/ChefSpecial";
