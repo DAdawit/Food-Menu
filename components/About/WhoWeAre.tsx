@@ -38,7 +38,7 @@ const WhoWeAre = () => {
             alt="spector"
             width={1000}
             height={2000}
-            className="w-full items-end text-center object-cover"
+            className="w-full items-end text-center object-cover h-52 object-bottom"
           />
         </div>
         <div className="h-96 max-w-full md:max-w-sm">
