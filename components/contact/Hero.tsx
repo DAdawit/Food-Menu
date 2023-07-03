@@ -93,12 +93,12 @@ const Hero = () => {
             <input
               type="text"
               className="h-10 outline-none font-sans text-lg px-3"
-              placeholder="your Name"
+              placeholder="Your Name"
             />
             <input
               type="email"
               className="h-10 outline-none font-sans text-lg px-3"
-              placeholder="your Email"
+              placeholder="Your Email"
             />
             <input
               type="number"
