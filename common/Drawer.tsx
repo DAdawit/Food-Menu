@@ -70,42 +70,34 @@ export default function TemporaryDrawer() {
                   />
                 </div>
                 <section className="mt-10 flex flex-col gap-2 pl-3">
-                  <div className="flex justify-start items-center gap-2 text-primary font-medium border-2 border-primary rounded-lg px-2">
+                  <Link
+                    href="/"
+                    className="font-medium font-sans tracking-wider flex justify-start items-center gap-2 text-primary  border-2 border-primary rounded-lg px-2"
+                  >
                     <HomeIcon className="text-2xl" />
-                    <Link
-                      href="/"
-                      className="font-medium font-sans tracking-wider"
-                    >
-                      Home
-                    </Link>
-                  </div>
-                  <div className="flex justify-start items-center gap-2 text-primary font-medium border-2 border-primary rounded-lg px-2">
+                    Home
+                  </Link>
+                  <Link
+                    href="/menu"
+                    className="font-medium font-sans tracking-wider flex justify-start items-center gap-2 text-primary  border-2 border-primary rounded-lg px-2"
+                  >
                     <RestaurantIcon className="text-2xl" />
-                    <Link
-                      href="/menu"
-                      className="font-medium font-sans tracking-wider"
-                    >
-                      Menu
-                    </Link>
-                  </div>
-                  <div className="flex justify-start items-center gap-2 text-primary font-medium border-2 border-primary rounded-lg px-2">
+                    Menu
+                  </Link>
+                  <Link
+                    href="/about"
+                    className="font-medium font-sans tracking-wider flex justify-start items-center gap-2 text-primary  border-2 border-primary rounded-lg px-2"
+                  >
                     <ReadMoreIcon className="text-2xl" />
-                    <Link
-                      href="/about"
-                      className="font-medium font-sans tracking-wider"
-                    >
-                      About us
-                    </Link>
-                  </div>
-                  <div className="flex justify-start items-center gap-2 text-primary font-medium border-2 border-primary rounded-lg px-2">
+                    About us
+                  </Link>
+                  <Link
+                    href="/contact"
+                    className="font-medium font-sans tracking-wider flex justify-start items-center gap-2 text-primary  border-2 border-primary rounded-lg px-2"
+                  >
                     <ContactPageIcon className="text-2xl" />
-                    <Link
-                      href="/contact"
-                      className="font-medium font-sans tracking-wider"
-                    >
-                      Contact us
-                    </Link>
-                  </div>
+                    Contact us
+                  </Link>
                 </section>
 
                 <section className="mt-14">
