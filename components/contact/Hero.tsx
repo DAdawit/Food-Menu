@@ -41,7 +41,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <section className="grid grid-cols-1 sm:grid-cols-3 px-5  py-5">
+      <section className="grid grid-cols-1 sm:grid-cols-3 px-5  py-10">
         <div className="grid">
           <h1 className="text-gray-200 font-medium text-center text-xl font-sans mb-3 ">
             Lunch Time
@@ -80,14 +80,14 @@ const Hero = () => {
         </div>
       </section>
 
-      <section className="container mx-auto grid grid-cols-1 md:grid-cols-2 px-10 py-10 mt-16 gap-8 bg-black">
+      <section className="container mx-auto grid grid-cols-1 md:grid-cols-2 px-10 py-10 mt-16 gap-8 bg-black mb-10">
         <div>
           <h1 className="text-center font-sans text-4xl text-gray-100 font-bold tracking-wider">
             Message us
           </h1>
           <p className="text-center font-mono text-lg text-gray-200 tracking-wide mt-5 px-5">
-            Have a question about the our service? We're here to help, contact
-            us today
+            Have a question about the our service? We&apos;re here to help,
+            contact us today
           </p>
           <form className="grid gap-y-3">
             <input

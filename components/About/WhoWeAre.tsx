@@ -36,18 +36,18 @@ const WhoWeAre = () => {
           <Image
             src="/chef1.jpg"
             alt="spector"
-            width={100}
-            height={200}
+            width={1000}
+            height={2000}
             className="w-full items-end text-center object-cover"
           />
         </div>
         <div className="h-96 max-w-full md:max-w-sm">
           {/* eslint-disable-next-line */}
-          <img
+          <Image
             src="/hotel.jpg"
             alt="spector"
-            width={100}
-            height={200}
+            width={1000}
+            height={2000}
             className="text-center h-full w-full object-cover"
           />
         </div>
