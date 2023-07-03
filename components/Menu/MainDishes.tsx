@@ -22,11 +22,11 @@ const MainDishes = () => {
           <div className="grid grid-cols-1 md:flex md:justify-evenly  gap-2 md:flex-row-reverse">
             <div>
               {/* eslint-disable-next-line */}
-              <img
+              <Image
                 src="/banner11.jpg"
                 alt="spector"
-                width={100}
-                height={200}
+                width={1000}
+                height={2000}
                 className="w-screen h-60 sm:h-96 object-cover"
               />
             </div>
